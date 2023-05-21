@@ -7,13 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: 'var(--font-roboto)',
-        alt: 'var(--font-bai-jamjuree)',
+      backgroundImage: {
+        stripes:
+          'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 12.5%, transparent 12.5%, transparent)',
+      },
+      backgroundSize: {
+        stripes: '100% 8px',
+      },
+      blur: {
+        full: '194px',
       },
       colors: {
         gray: {
-           50: '#eaeaea',
+          50: '#eaeaea',
           100: '#bebebf',
           200: '#9e9ea0',
           300: '#727275',
@@ -25,7 +31,7 @@ module.exports = {
           900: '#121215',
         },
         purple: {
-           50: '#f3eefc',
+          50: '#f3eefc',
           100: '#d8cbf7',
           200: '#c6b2f3',
           300: '#ab8eee',
@@ -38,17 +44,24 @@ module.exports = {
         },
         green: {
           50: '#e6fbef',
-         100: '#b1f1ce',
-         200: '#8cebb6',
-         300: '#57e295',
-         400: '#36dc81',
-         500: '#04d361',
-         600: '#04c058',
-         700: '#039645',
-         800: '#027435',
-         900: '#025929',
-       },
-      }
+          100: '#b1f1ce',
+          200: '#8cebb6',
+          300: '#57e295',
+          400: '#36dc81',
+          500: '#04d361',
+          600: '#04c058',
+          700: '#039645',
+          800: '#027435',
+          900: '#025929',
+        },
+      },
+      fontFamily: {
+        sans: 'var(--font-roboto)',
+        alt: 'var(--font-bai-jamjuree)',
+      },
+      fontSize: {
+        '5xl': '2.5rem',
+      },
     },
   },
   plugins: [],
